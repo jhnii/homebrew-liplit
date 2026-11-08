@@ -14,8 +14,9 @@ cask "liplit" do
   app "Liplit.app"
 
   # 공증 전이라 macOS가 붙이는 격리 표시를 지운다 (크롬 확장·Claude 데스크톱이 앱 안 도구를 띄울 수 있게)
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Liplit.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Liplit.app"],
+                          writable_paths: ["Liplit.app"], writable_base: :appdir
   end
 
   zap trash: [
