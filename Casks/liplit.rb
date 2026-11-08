@@ -9,7 +9,7 @@ cask "liplit" do
 
   # 앱이 스스로 업데이트한다 (Sparkle) — brew upgrade가 덮어쓰지 않게
   auto_updates true
-  depends_on macos: ">= :sequoia"
+  depends_on macos: :sequoia
 
   app "Liplit.app"
 
