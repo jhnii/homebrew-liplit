@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Liplit</title>
+    <link>https://github.com/jhnii/homebrew-liplit</link>
+    <language>ko</language>
+    <item>
+      <title>1.0.0</title>
+      <pubDate>Sun, 08 Nov 2026 11:42:40 GMT</pubDate>
+      <sparkle:version>34</sparkle:version>
+      <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<p>첫 배포 — 회의 녹음·텍스트 변환·참석자 구분, Google Meet 녹음과 크롬 확장, Claude 데스크톱 연결, 자동 업데이트</p>]]></description>
+      <enclosure url="https://github.com/jhnii/homebrew-liplit/releases/download/v1.0.0/Liplit-1.0.0.dmg" type="application/octet-stream" sparkle:edSignature="IkUvpLoWfnkbhHdqJ1tcNGIv1vA5ALRb6MCNs8iYOytRFhS5lNrR8eM3xUUQINzkGm4llEesQIJQ8r3oiY4iDQ==" length="16797516" />
+    </item>
+  </channel>
+</rss>
