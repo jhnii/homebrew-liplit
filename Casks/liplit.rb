@@ -1,6 +1,6 @@
 cask "liplit" do
-  version "1.0.0"
-  sha256 "fb3be61fde3ba3296801d2f101d1b9da32357857c56733ad1e695aff86ad7ab1"
+  version "1.1.0"
+  sha256 "f976c11b3328141774fee8b935ebaeaada397988b7195d766226d718cc348a74"
 
   url "https://github.com/jhnii/homebrew-liplit/releases/download/v#{version}/Liplit-#{version}.dmg"
   name "Liplit"
@@ -12,12 +12,6 @@ cask "liplit" do
   depends_on macos: :sequoia
 
   app "Liplit.app"
-
-  # 공증 전이라 macOS가 붙이는 격리 표시를 지운다 (크롬 확장·Claude 데스크톱이 앱 안 도구를 띄울 수 있게)
-  postflight_steps do
-    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Liplit.app"],
-                          writable_paths: ["Liplit.app"], writable_base: :appdir
-  end
 
   zap trash: [
     "~/Library/Application Support/Liplit",
