@@ -1,6 +1,6 @@
 cask "liplit" do
-  version "1.1.0"
-  sha256 "f976c11b3328141774fee8b935ebaeaada397988b7195d766226d718cc348a74"
+  version "1.3.0"
+  sha256 "ec4d245517970cc558d84460484cf28c7e7a1e7b15e4cfe165f64b4a7d504088"
 
   url "https://github.com/jhnii/homebrew-liplit/releases/download/v#{version}/Liplit-#{version}.dmg"
   name "Liplit"
